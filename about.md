@@ -6,7 +6,10 @@ permalink: /about/
 
 ## About Bay Family Mediation
 
-Bay Family Mediation provides professional family dispute resolution services to help families navigate challenging times with dignity and respect.
+<div class="about-intro">
+<img src="/images/photo.jpg" alt="Linda, Bay Family Mediation">
+<p>Bay Family Mediation provides professional family dispute resolution services to help families navigate challenging times with dignity and respect.</p>
+</div>
 
 ### Our Approach
 

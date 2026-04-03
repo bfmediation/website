@@ -115,6 +115,30 @@ li {
 }
 
 
+/* --- About page: photo + intro layout --- */
+.about-intro {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.about-intro img {
+    width: 220px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .about-intro {
+        flex-direction: column;
+    }
+
+    .about-intro img {
+        width: 100%;
+    }
+}
+
 /* --- Homepage: Hero section --- */
 /* The large intro text at the top of index.html */
 .hero {
