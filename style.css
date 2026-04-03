@@ -48,7 +48,7 @@ nav {
 
 /* Logo image sizing — currently hidden in header.html; uncomment the <img> there to use */
 .site-logo {
-    height: 56px; /* adjust if the logo appears too large or small */
+    height: 90px; /* adjust if the logo appears too large or small */
     display: block;
 }
 
