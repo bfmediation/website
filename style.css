@@ -1,9 +1,23 @@
+/* ============================================================
+   style.css — main stylesheet for Bay Family Mediation
+
+   Colour theme: teal (#2c5f7c) used throughout for headers,
+   headings, borders, and links. To rebrand, find-and-replace
+   #2c5f7c with your new colour.
+   ============================================================ */
+
+
+/* --- Reset --- */
+/* Removes default browser spacing so everything starts consistent */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* --- Base body --- */
+/* Sets the default font, text colour, and makes the page full-height
+   so the footer always sits at the bottom */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
@@ -14,9 +28,10 @@ body {
 }
 
 
-/* Header & Nav */
+/* --- Header & Nav --- */
+/* The dark teal bar across the top containing the logo/name and nav links */
 header {
-    background: #2c5f7c;
+    background: #2c5f7c; /* brand colour — change here to restyle the header bar */
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -31,15 +46,16 @@ nav {
     align-items: center;
 }
 
+/* Logo image sizing — currently hidden in header.html; uncomment the <img> there to use */
 .site-logo {
-    height: 56px;
+    height: 56px; /* adjust if the logo appears too large or small */
     display: block;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 2rem; /* space between nav links — increase for more breathing room */
 }
 
 nav a {
@@ -52,27 +68,33 @@ nav a:hover {
     opacity: 0.8;
 }
 
-/* Main content */
+
+/* --- Main content area --- */
+/* Centred column with comfortable reading width.
+   .wide (used on the homepage) allows a wider grid for the service cards. */
 main {
     flex: 1;
-    max-width: 800px;
+    max-width: 800px;  /* narrower = better for reading-heavy pages (about, contact) */
     margin: 0 auto;
     padding: 3rem 2rem;
 }
 
 main.wide {
-    max-width: 1200px;
+    max-width: 1200px; /* wider = better for the homepage services grid */
 }
 
-/* About / Contact page headings */
+
+/* --- Headings --- */
+/* h2 is used as the main page heading on each page */
 h2 {
-    color: #2c5f7c;
+    color: #2c5f7c; /* brand colour */
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
 
+/* h3 is used for subsections (about page, service card titles) */
 h3 {
-    color: #2c5f7c;
+    color: #2c5f7c; /* brand colour */
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
@@ -82,14 +104,16 @@ p {
     color: #555;
 }
 
-/* Index: Hero */
+
+/* --- Homepage: Hero section --- */
+/* The large intro text at the top of index.html */
 .hero {
     text-align: center;
     margin-bottom: 3rem;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 2.5rem;  /* larger than regular h2 for impact */
     color: #2c5f7c;
     margin-bottom: 1rem;
 }
@@ -101,10 +125,12 @@ p {
     margin: 0 auto;
 }
 
-/* Index: Services */
+
+/* --- Homepage: Services grid --- */
+/* Cards automatically flow into columns — add more cards in index.html and they reflow */
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* min card width: 280px */
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -113,7 +139,7 @@ p {
     padding: 2rem;
     background: #f8f9fa;
     border-radius: 8px;
-    border-left: 4px solid #2c5f7c;
+    border-left: 4px solid #2c5f7c; /* brand colour accent stripe */
 }
 
 .service-card h3 {
@@ -122,12 +148,14 @@ p {
     margin-top: 0;
 }
 
-/* Contact page */
+
+/* --- Contact page --- */
+/* Highlighted box containing contact details */
 .contact-info {
     background: #f8f9fa;
     padding: 2rem;
     border-radius: 8px;
-    border-left: 4px solid #2c5f7c;
+    border-left: 4px solid #2c5f7c; /* brand colour accent stripe */
     margin-top: 2rem;
 }
 
@@ -145,7 +173,9 @@ p {
     text-decoration: underline;
 }
 
-/* Footer */
+
+/* --- Footer --- */
+/* Light grey bar at the bottom of every page — content is in footer.html */
 footer {
     background: #f8f9fa;
     text-align: center;
@@ -154,7 +184,9 @@ footer {
     color: #666;
 }
 
-/* Responsive */
+
+/* --- Responsive: mobile --- */
+/* On small screens, stack the nav vertically and shrink the hero heading */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
