@@ -10,7 +10,7 @@
     <!-- Absolute paths required here — markdown pages may be served from subdirectory URLs (e.g. /how-it-works/) -->
     <script>(s=>fetch('/header.html').then(r=>r.text()).then(h=>s.insertAdjacentHTML('beforebegin',h)))(document.currentScript)</script>
 
-    <main>
+    <main{% if page.main_class %} class="{{ page.main_class }}"{% endif %}>
         {{ content }}
     </main>
 

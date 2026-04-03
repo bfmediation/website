@@ -1,0 +1,18 @@
+---
+layout: default
+main_class: wide
+---
+
+<section class="hero">
+    <h2>{{ page.hero_heading }}</h2>
+    <p>{{ page.hero_text }}</p>
+</section>
+
+<section class="services">
+    {% for card in page.services %}
+    <div class="service-card">
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.text }}</p>
+    </div>
+    {% endfor %}
+</section>

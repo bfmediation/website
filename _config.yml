@@ -85,3 +85,4 @@ exclude:
   - README.md
   - CNAME
   - style.scss
+  - backup-html
