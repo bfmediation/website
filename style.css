@@ -104,6 +104,16 @@ p {
     color: #555;
 }
 
+ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
 
 /* --- Homepage: Hero section --- */
 /* The large intro text at the top of index.html */
