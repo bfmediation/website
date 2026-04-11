@@ -35,4 +35,4 @@ Most matters are resolved within **two to four sessions**, though this varies de
 
 <br>
 
-Ready to take the first step? [Get in touch](/contact.html) to arrange a confidential initial enquiry.
+Ready to take the first step? [Get in touch](/contact/) to arrange a confidential initial enquiry.
