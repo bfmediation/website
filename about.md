@@ -25,11 +25,11 @@ Mediation offers families a more collaborative, cost-effective, and less stressf
 
 We are committed to providing impartial, professional mediation services that respect the unique circumstances of each family. Our focus is always on finding practical, forward-looking solutions.
 
-## How Mediation Works
+### How Mediation Works
 
 Mediation is a structured, voluntary process where a neutral third party helps you and the other person reach your own agreements — without going to court.
 
-### The Process
+#### The Process
 
 1. **Initial enquiry** — Contact us to discuss your situation. We'll explain the process and answer any questions you have.
 2. **Intake session** — Each party meets separately with the mediator. This gives everyone a chance to share their perspective and prepare.
